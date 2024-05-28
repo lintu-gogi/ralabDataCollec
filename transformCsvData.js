@@ -25,26 +25,22 @@ for(let i=0;i<cellsRow.length;i++){
         }
         else
         {
-        //csv.cellscoloum[i][j]=cellscoloum[i+1][j+1];
+        
         rowEle=cellscoloum[i][j];
-        console.log(rowEle);
-        //finalArray.push(csv);
         csv[firstRow[j]]=rowEle;
        
-        //csv[rowEle]=rowEle;//Correct way of inserting element
         }
        
     }
     console.log("After one row");
     console.log(csv);
-    //finalArray.push(csv);
+   
    let l= Object.keys(csv).length;
    
    if(l!=0){
     finalArray.push(csv)
    }
-    //console.log("csv"+i+finalArray);
-    //csv.id="5"
+   
 }
 console.log("Final Array");
 console.log(finalArray);
