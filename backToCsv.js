@@ -25,6 +25,8 @@ const csvString = [
       item.Occupation,
       item.Age
     ])
-  ];
+  ].map(e => e.join(",")) 
+  .join("\n");
 
+console.log("Final Csv String");
 console.log(csvString);
